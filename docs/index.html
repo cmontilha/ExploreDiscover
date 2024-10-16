@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=".." type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Explore & Discover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="light">
+
+<header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Explore & Discover logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="Explore & Discover logo"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="dark-mode">
+                                    <label class="form-check-label" for="dark-mode">Dark mode</label>
+                                </div></a>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="banners-title bg-body-secondary py-5">
+            <h2 class="fw-bold">Your gateway to explore the USA.</h2>
+            <p>Welcome to Explore & Discover! A place to uncover the best travel experiences in the United States.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Our services</h2>
+
+        <div class="container d-flex justify-content-around flex-wrap">
+
+            <div class="card m-4" style="width: 20rem;">
+                <img src="assets/travel-guide.png" class="card-img-top"
+                     alt="Travel guide through various cities in the US">
+                <div class="card-body">
+                    <h5 class="card-title py-2 fw-bold">Travel Guides</h5>
+                    <p class="card-text">Explore personalized travel guides covering the best cities in the US. Discover hidden gems, iconic landmarks, and local experiences.</p>
+                    <a href="#" class="btn standard-button w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">See details</a>
+                </div>
+            </div>
+
+            <div class="card m-4" style="width: 20rem;">
+                <img src="assets/landmark-card.png" class="card-img-top" alt="Popular US landmarks and attractions">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Landmark Highlights</h5>
+                    <p class="card-text">Discover the top landmarks across various cities. From New York to San Francisco, our guide brings you the must-see spots in each city.</p>
+                    <a href="#" class="btn standard-button w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                       data-bs-target="#canvas-2" aria-controls="offcanvasRight">See details</a>
+                </div>
+            </div>
+
+            <div class="card m-4" style="width: 20rem;">
+                <img src="assets/restaurant-card.png" class="card-img-top" alt="Selection of popular US restaurants">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Restaurant Recommendations</h5>
+                    <p class="card-text">Explore top-rated restaurants and local eateries. Enjoy the best dining experiences that each city has to offer.</p>
+                    <a href="#" class="btn standard-button w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                       data-bs-target="#canvas-3" aria-controls="offcanvasRight">See details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banners banner-2 d-flex flex-column justify-content-center">
+        <div class="banners-title bg-body-secondary text-center py-5">
+            <h2 class="fw-bold">Open to all travelers.</h2>
+            <p>Whether you're solo, with family, or on a business trip, our guides have something for everyone.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+
+        <h2 class="fw-bold text-center pb-1">Our destinations</h2>
+
+        <div class="row mx-0">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-nyc"
+                     style="width: 18rem;">
+                    <img src="assets/nyc.png" class="card-img-top" alt="New York City skyline">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">New York City</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-sf"
+                     style="width: 18rem;">
+                    <img src="assets/san-francisco.png" class="card-img-top" alt="Golden Gate Bridge in San Francisco">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold text-center">San Francisco</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-dc"
+                     style="width: 18rem;">
+                    <img src="assets/washington-dc.png" class="card-img-top" alt="Washington DC landmarks">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold text-nowrap">Washington DC</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row mx-0 mt-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-chicago"
+                     style="width: 18rem;">
+                    <img src="assets/chicago.png" class="card-img-top" alt="Chicago skyline">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Chicago</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-miami"
+                     style="width: 18rem;">
+                    <img src="assets/miami.png" class="card-img-top" alt="Miami Beach">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold text-center">Miami</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-la"
+                     style="width: 18rem;">
+                    <img src="assets/los-angeles.png" class="card-img-top" alt="Los Angeles skyline">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Los Angeles</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="row mx-0 mt-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-vegas"
+                     style="width: 18rem;">
+                    <img src="assets/las-vegas.png" class="card-img-top" alt="Las Vegas Strip">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Las Vegas</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-boston"
+                     style="width: 18rem;">
+                    <img src="assets/boston.png" class="card-img-top" alt="Boston skyline">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold text-center">Boston</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-seattle"
+                     style="width: 18rem;">
+                    <img src="assets/seattle.png" class="card-img-top" alt="Seattle skyline">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Seattle</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Add modals for each destination -->
+    <!-- Modal for New York City -->
+    <div class="modal fade" id="modal-nyc" tabindex="-1" aria-labelledby="modalNYCLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalNYCLabel">New York City</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/nyc.png" class="w-100" alt="New York City skyline">
+                    <p>Explore the vibrant streets of New York City, from the iconic Statue of Liberty to Times Square. Discover landmarks, hidden gems, and top-rated restaurants in the city that never sleeps.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for San Francisco -->
+    <div class="modal fade" id="modal-sf" tabindex="-1" aria-labelledby="modalSFLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalSFLabel">San Francisco</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/san-francisco.png" class="w-100" alt="Golden Gate Bridge in San Francisco">
+                    <p>Experience the beauty of San Francisco, from the iconic Golden Gate Bridge to Fisherman’s Wharf. Explore the city’s landmarks and the hidden charm of its neighborhoods.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Washington DC -->
+    <div class="modal fade" id="modal-dc" tabindex="-1" aria-labelledby="modalDCLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalDCLabel">Washington DC</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/washington-dc.png" class="w-100" alt="Washington DC landmarks">
+                    <p>Discover the historic landmarks of Washington DC, including the White House, Capitol Hill, and the National Mall. A perfect destination for history buffs and culture seekers.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Chicago -->
+    <div class="modal fade" id="modal-chicago" tabindex="-1" aria-labelledby="modalChicagoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalChicagoLabel">Chicago</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/chicago.png" class="w-100" alt="Chicago skyline">
+                    <p>Visit Chicago and experience its stunning architecture, iconic skyline, and rich cultural scene. From Millennium Park to Navy Pier, there’s always something to explore.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Miami -->
+    <div class="modal fade" id="modal-miami" tabindex="-1" aria-labelledby="modalMiamiLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalMiamiLabel">Miami</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/miami.png" class="w-100" alt="Miami Beach">
+                    <p>Enjoy the sun, sand, and vibrant nightlife in Miami. Discover world-class beaches, explore Little Havana, and experience the city’s energetic atmosphere.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Los Angeles -->
+    <div class="modal fade" id="modal-la" tabindex="-1" aria-labelledby="modalLALabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalLALabel">Los Angeles</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/los-angeles.png" class="w-100" alt="Los Angeles skyline">
+                    <p>From the Hollywood Hills to Santa Monica Pier, Los Angeles offers endless entertainment and attractions. Walk down the Hollywood Walk of Fame and explore the city of dreams.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Las Vegas -->
+    <div class="modal fade" id="modal-vegas" tabindex="-1" aria-labelledby="modalVegasLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalVegasLabel">Las Vegas</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/las-vegas.png" class="w-100" alt="Las Vegas Strip">
+                    <p>Step into the world of glitz and glamour in Las Vegas. From world-class casinos to luxurious resorts, experience the entertainment capital of the world like never before.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Boston -->
+    <div class="modal fade" id="modal-boston" tabindex="-1" aria-labelledby="modalBostonLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalBostonLabel">Boston</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/boston.png" class="w-100" alt="Boston skyline">
+                    <p>Walk the historic Freedom Trail in Boston, where past and present blend seamlessly. Visit Harvard University, explore the historic sites, and enjoy the charm of New England.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Seattle -->
+    <div class="modal fade" id="modal-seattle" tabindex="-1" aria-labelledby="modalSeattleLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="modalSeattleLabel">Seattle</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/seattle.png" class="w-100" alt="Seattle skyline">
+                    <p>Discover Seattle’s Space Needle, Pike Place Market, and scenic waterfront. Explore this vibrant city known for its coffee culture, tech innovations, and natural beauty.</p>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary standard-button border-0" data-bs-dismiss="modal">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="banners banner-3">
+    </section>
+
+    <section class="py-4 container">
+        <div class="row">
+            <div class="col-10 col-xl-8 mx-auto">
+                <div class="border border-2 rounded p-3">
+                    <h3 class="fw-bold p-3">Get in touch!</h3>
+                    <form id="contact">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                            <label for="floatingName">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingPhone" placeholder="Phone">
+                            <label for="floatingPhone">Phone</label>
+                        </div>
+                        <select class="form-select mb-3" aria-label="Default select example">
+                            <option selected>Preferred contact method:</option>
+                            <option value="1">WhatsApp</option>
+                            <option value="2">Email</option>
+                            <option value="3">Call</option>
+                        </select>
+                        <label for="satisfaction-level" class="form-label">Satisfaction level:</label>
+                        <input type="range" class="form-range input-range" id="satisfaction-level">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Would you like to receive news via email?
+                            </label>
+                        </div>
+                        <button type="button" class="btn standard-button w-100 fw-bold mt-3 py-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="text-center">
+        <section class="container p-4 pb-0 mb-4">
+            <a class="btn" href="#!"><i class="bi bi-whatsapp"></i></a>
+            <a class="btn" href="#!"><i class="bi bi-instagram"></i></a>
+            <a class="btn" href="#!"><i class="bi bi-twitter"></i></a>
+        </section>
+        <div class="p-3">
+            2024 <i class="bi bi-c-circle"></i> Developed by cmontilha | Fictional project with no commercial purposes.
+        </div>
+    </footer>
+
+</main>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Travel Guides</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button standard-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Explore Cities
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Our travel guides provide detailed exploration tips for the best cities in the US. From must-see attractions to hidden gems, we've got you covered.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed standard-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Customized Routes
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Plan your own route based on your interests and travel style. Our custom itineraries cater to different types of travelers, ensuring a unique experience.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed standard-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Local Experiences
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Get the local experience by visiting off-the-beaten-path attractions, unique cafes, and hidden cultural spots.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Landmark Highlights</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed standard-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionLandmarks" aria-expanded="false" aria-controls="collapseOne">
+                        Popular Landmarks
+                    </button>
+                </h2>
+                <div id="accordionLandmarks" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Discover the most popular landmarks across the US, from the Statue of Liberty in New York to the Golden Gate Bridge in San Francisco.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed standard-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionHidden" aria-expanded="false" aria-controls="collapseOne">
+                        Hidden Gems
+                    </button>
+                </h2>
+                <div id="accordionHidden" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Explore lesser-known attractions that provide unique experiences in each city. Perfect for travelers looking for something different.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Restaurant Recommendations</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed standard-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionPopular" aria-expanded="false" aria-controls="collapseOne">
+                        Top Restaurants
+                    </button>
+                </h2>
+                <div id="accordionPopular" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Discover the most famous restaurants in the US, offering diverse cuisines from Italian to American classics.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed standard-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionLocal" aria-expanded="false" aria-controls="collapseOne">
+                        Local Eateries
+                    </button>
+                </h2>
+                <div id="accordionLocal" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Explore local favorites, perfect for grabbing a bite and experiencing the true flavors of each city.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</div>
+</body>
+
+</html>
