@@ -48,7 +48,7 @@
 
 ## Visit the Website
 
-Check out the live version of the project here: [Explore-Discover Website](https://cmontilha.github.io/Explore-Discover/)
+Check out the live version of the project here: [Explore-Discover Website](https://cmontilha.github.io/ExploreDiscover/)
 
 
 2024 © Fictional project with no commercial purposes.
