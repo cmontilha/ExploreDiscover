@@ -1,11 +1,2 @@
-docs/assets/*.html linguist-language=HTML
-docs/assets/*.css linguist-language=CSS
-docs/assets/*.js linguist-language=JavaScript
-
-docs/* linguist-documentation
-!docs/assets/*.html
-!docs/assets/*.css
-!docs/assets/*.js
-
-assets/js/terceiros/* linguist-vendored
-*.min.js linguist-generated=true
+*.md linguist-detectable=true
+*.md linguist-documentation=false
