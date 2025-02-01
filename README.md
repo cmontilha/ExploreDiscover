@@ -4,6 +4,12 @@
 
 ---
 
+## Visit the Website
+
+Click here: [Explore-Discover Website](https://cmontilha.github.io/ExploreDiscover/)
+
+---
+
 ## ✨ Key Features
 - **Personalized Travel Guides**: Discover tailored guides to the top U.S. cities, showcasing landmarks, hidden gems, and local experiences.
 - **Interactive Maps**: Easily navigate cities and find attractions, restaurants, and landmarks near you.
@@ -43,12 +49,6 @@
 - **HTML5 & CSS3**: For building responsive layouts.
 - **JavaScript**: To handle dynamic interactions.
 - **Bootstrap**: For modern, responsive design.
-
----
-
-## Visit the Website
-
-Check out the live version of the project here: [Explore-Discover Website](https://cmontilha.github.io/ExploreDiscover/)
 
 
 2024 © Fictional project with no commercial purposes.
